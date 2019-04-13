@@ -1,0 +1,32 @@
+Tips for slidify  
+
+1 Install slidify  
+```
+library(devtools)
+install_github('slidify', 'ramnathv')
+library(slidify)
+```
+
+2. Create a slide deck.  
+```
+#  create a slide deck
+author("mydeck")
+```
+
+3. Open index.Rmd for you to edit.  
+separate your slides by a blank line followed by three dashes ---.
+
+4. Create a html file of the deck  
+Generate the html file that will be your presentation.
+```
+slidify('index.Rmd')
+```
+
+5. Open the presentation  
+Double click it and open your presentation in web browser
+
+6. Publish to github pages  
+Publishing to Github is as easy as running publish from inside the slide directory. You need to have git installed on your system, create an empty github repo and ssh access set up for github.
+```
+publish(user = "USER", repo = "REPO")
+```
