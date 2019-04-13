@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>Machine Learning - Classification Methods</title>
   <meta charset="utf-8">
-  <meta name="description" content="">
+  <meta name="description" content="Machine Learning - Classification Methods">
   <meta name="author" content="Jisun Kim">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,13 +32,10 @@
     <!-- LOGO SLIDE -->
         <slide class="title-slide segue nobackground">
   <hgroup class="auto-fadein">
-    <h1></h1>
+    <h1>Machine Learning - Classification Methods</h1>
     <h2>Project - Shiny Application and reproducible Pitch</h2>
     <p>Jisun Kim<br/></p>
   </hgroup>
-    <a href="https://github.com/jisunxkim/shinyproject/zipball/gh-pages" class="example">
-     Download
-    </a>
   <article></article>  
 </slide>
     
@@ -46,10 +43,71 @@
     <!-- SLIDES -->
     <slide class="" id="slide-1" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>Introduction to the Shiny App</h2>
   </hgroup>
   <article data-timings="">
-    
+    <p>Objective</p>
+
+<ul>
+<li>Introduce the two most common classification methods: k-means and Hierarchical Agglomerative</li>
+<li>Test the methods using mtcars from the R datasets</li>
+<li>Set different number of clusters which is important parameters for the methods</li>
+</ul>
+
+<h2>How to use the app</h2>
+
+<p>Directions</p>
+
+<ul>
+<li>1. pick a method</li>
+<li>2. select number of class</li>
+<li>3. explore data summary, cluster result and cluster plot tabs for the results</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>k-means and Hierarchical Agglomerative</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul class = "build incremental">
+<li><p>k-means:<br>
+&quot;K-means clustering is the most commonly used unsupervised machine learning algorithm for partitioning a given data set into a set of k groups (i.e. k clusters), where k represents the number of groups pre-specified by the analyst. It classifies objects in multiple groups (i.e., clusters), such that objects within the same cluster are as similar as possible (i.e., high intra-class similarity), whereas objects from different clusters are as dissimilar as possible (i.e., low inter-class similarity). In k-means clustering, each cluster is represented by its center (i.e, centroid) which corresponds to the mean of points assigned to the cluster.&quot;<br>
+source: <a href="https://uc-r.github.io/kmeans_clustering">https://uc-r.github.io/kmeans_clustering</a>  </p></li>
+<li><p>Hierarchical Agglomerative:<br>
+&quot;The agglomerative clustering is the most common type of hierarchical clustering used to group objects in clusters based on their similarity. It&#39;s also known as AGNES (Agglomerative Nesting). The algorithm starts by treating each object as a singleton cluster. Next, pairs of clusters are successively merged until all clusters have been merged into one big cluster containing all objects. The result is a tree-based representation of the objects, named dendrogram.&quot;&quot;<br>
+source: <a href="https://www.datanovia.com/en/lessons/agglomerative-hierarchical-clustering/">https://www.datanovia.com/en/lessons/agglomerative-hierarchical-clustering/</a>  </p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Example - K-means</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Data: mtcars, Number of Clusters: 3</p>
+
+<p><img src="figure/unnamed-chunk-1-1.png" alt="plot of chunk unnamed-chunk-1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Example - Hierarchical Agglomerative</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Data: mtcars, Number of Clusters: 3</p>
+
+<p><img src="figure/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"></p>
+
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -60,8 +118,26 @@
     <ul>
       <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=1 title='Slide 2'>
+        data-slide=1 title='Introduction to the Shiny App'>
          1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='k-means and Hierarchical Agglomerative'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Example - K-means'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Example - Hierarchical Agglomerative'>
+         4
       </a>
     </li>
   </ul>
